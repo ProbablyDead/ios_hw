@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  hw1
+//  isvolodinPW1
 //
-//  Created by Илья Володин on 15.10.2023.
+//  Created by Илья Володин on 13.11.2023.
 //
 
 import UIKit
