@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB4-Hk-sQK">
-                                <rect key="frame" x="16" y="659" width="175" height="159"/>
+                                <rect key="frame" x="16" y="659" width="178" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Change outfit"/>
@@ -26,56 +26,67 @@
                                     <action selector="changeOutfitButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4a-VG-f0s"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azg-0m-dS0">
-                                <rect key="frame" x="159" y="286" width="75" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="DoZ-3u-TVH">
+                                <rect key="frame" x="227" y="282" width="51" height="32"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="QHu-MJ-AGf"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DoZ-3u-TVH">
-                                <rect key="frame" x="107" y="286" width="53" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="0ot-hW-cKL">
+                                <rect key="frame" x="251" y="314" width="27" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="AR6-J3-oph"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ot-hW-cKL">
-                                <rect key="frame" x="107" y="318" width="33" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpP-wg-dhc">
-                                <rect key="frame" x="233" y="286" width="53" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFb-Hl-ZKM">
-                                <rect key="frame" x="253" y="318" width="33" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOM-39-qjK">
-                                <rect key="frame" x="107" y="383" width="33" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="fOM-39-qjK">
+                                <rect key="frame" x="117" y="379" width="29" height="13"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="VEF-vv-R12">
+                                        <rect key="frame" x="18" y="4" width="11" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <viewLayoutGuide key="safeArea" id="Qxm-JM-M44"/>
+                                        <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="7Sp-nP-U0j">
+                                        <rect key="frame" x="0.0" y="4" width="10" height="21"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <viewLayoutGuide key="safeArea" id="tkV-fj-feC"/>
+                                        <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="tOp-41-CNK"/>
                                 <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-OQ-zIi">
-                                <rect key="frame" x="180" y="274" width="33" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="wp6-OQ-zIi">
+                                <rect key="frame" x="184" y="274" width="25" height="13"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="gOD-5I-zXJ"/>
                                 <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qu7-E6-hCJ">
-                                <rect key="frame" x="164" y="207" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="qu7-E6-hCJ">
+                                <rect key="frame" x="166" y="209" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R90-r4-B4N">
-                                        <rect key="frame" x="0.0" y="11" width="64" height="10"/>
+                                        <rect key="frame" x="0.0" y="11" width="61" height="10"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.12445369866605582" green="0.30597028405807936" blue="0.63141072349450023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
+                                <viewLayoutGuide key="safeArea" id="pl9-DZ-P7f"/>
                                 <color key="backgroundColor" systemColor="tintColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vrd-rK-Ek6">
-                                <rect key="frame" x="167" y="228" width="58" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="vrd-rK-Ek6">
+                                <rect key="frame" x="166" y="228" width="61" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdj-tg-DQ3">
                                         <rect key="frame" x="8" y="13" width="8" height="8"/>
@@ -93,55 +104,33 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
+                                <viewLayoutGuide key="safeArea" id="xgl-2I-g7M"/>
                                 <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEF-vv-R12">
-                                <rect key="frame" x="107" y="396" width="13" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6U-Dj-Gbo">
-                                <rect key="frame" x="127" y="396" width="13" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Zm-QK-bmp">
-                                <rect key="frame" x="253" y="383" width="33" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3G-Mh-aa6">
-                                <rect key="frame" x="253" y="396" width="13" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Sp-nP-U0j">
-                                <rect key="frame" x="273" y="396" width="13" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZF-Qx-r4B">
-                                <rect key="frame" x="202" y="414" width="32" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="CZF-Qx-r4B">
+                                <rect key="frame" x="202" y="406" width="25" height="136"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="rAp-R3-03R"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zhV-Uc-6bx">
-                                <rect key="frame" x="202" y="550" width="32" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="zhV-Uc-6bx">
+                                <rect key="frame" x="166" y="542" width="24" height="26"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="5IH-CV-rlf"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-9I-8uG">
-                                <rect key="frame" x="159" y="414" width="32" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" id="b2E-9I-8uG">
+                                <rect key="frame" x="166" y="406" width="24" height="136"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="z7V-c8-8JO"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lYv-Nq-fiQ">
-                                <rect key="frame" x="159" y="550" width="32" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk3-P9-CGe">
-                                <rect key="frame" x="199" y="659" width="175" height="159"/>
+                                <rect key="frame" x="202" y="659" width="175" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Blink ;)"/>
@@ -149,6 +138,57 @@
                                     <action selector="blinkButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1FW-tR-B5Q"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="IpP-wg-dhc">
+                                <rect key="frame" x="117" y="282" width="50" height="32"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="WSc-AB-a8e"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="azg-0m-dS0">
+                                <rect key="frame" x="166" y="282" width="61" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="CMV-1R-s63"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="LFb-Hl-ZKM">
+                                <rect key="frame" x="117" y="314" width="29" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="yhB-9Y-lKz"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="4Zm-QK-bmp">
+                                <rect key="frame" x="251" y="379" width="27" height="13"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="c3G-Mh-aa6">
+                                        <rect key="frame" x="0.0" y="8" width="10" height="19"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <viewLayoutGuide key="safeArea" id="gq3-ru-MgJ"/>
+                                        <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Nsd-rI-S4E"/>
+                                <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="x6U-Dj-Gbo">
+                                <rect key="frame" x="269" y="387" width="9" height="19"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="q2E-Os-RaY"/>
+                                <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="lYv-Nq-fiQ">
+                                <rect key="frame" x="202" y="542" width="25" height="26"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <viewLayoutGuide key="safeArea" id="nbx-t1-ogQ"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -165,7 +205,6 @@
                         <outlet property="hatView" destination="qu7-E6-hCJ" id="lUg-Du-tqg"/>
                         <outlet property="mouthView" destination="kwe-K9-bGH" id="4Lu-Lv-kCY"/>
                         <outlet property="visorView" destination="R90-r4-B4N" id="Pio-Ff-RsP"/>
-                        <outletCollection property="sweaterView" destination="azg-0m-dS0" collectionClass="NSMutableArray" id="gpY-Ce-Dgx"/>
                         <outletCollection property="sweaterView" destination="IpP-wg-dhc" collectionClass="NSMutableArray" id="jeE-dL-v0G"/>
                         <outletCollection property="sweaterView" destination="LFb-Hl-ZKM" collectionClass="NSMutableArray" id="BIT-2R-Ovw"/>
                         <outletCollection property="sweaterView" destination="DoZ-3u-TVH" collectionClass="NSMutableArray" id="6x1-jW-74O"/>
@@ -176,14 +215,15 @@
                         <outletCollection property="shoesView" destination="lYv-Nq-fiQ" collectionClass="NSMutableArray" id="FOJ-Nf-jm4"/>
                         <outletCollection property="skinView" destination="vrd-rK-Ek6" collectionClass="NSMutableArray" id="Arr-LB-ekz"/>
                         <outletCollection property="skinView" destination="wp6-OQ-zIi" collectionClass="NSMutableArray" id="Nfe-wq-9LX"/>
-                        <outletCollection property="skinView" destination="7Sp-nP-U0j" collectionClass="NSMutableArray" id="Sne-u9-Cfc"/>
-                        <outletCollection property="skinView" destination="4Zm-QK-bmp" collectionClass="NSMutableArray" id="orr-11-nwt"/>
-                        <outletCollection property="skinView" destination="c3G-Mh-aa6" collectionClass="NSMutableArray" id="tfx-pO-T5L"/>
-                        <outletCollection property="skinView" destination="x6U-Dj-Gbo" collectionClass="NSMutableArray" id="s4P-gd-WAg"/>
                         <outletCollection property="skinView" destination="fOM-39-qjK" collectionClass="NSMutableArray" id="tv5-9F-DLQ"/>
-                        <outletCollection property="skinView" destination="VEF-vv-R12" collectionClass="NSMutableArray" id="dEO-lK-kw6"/>
                         <outletCollection property="eyesView" destination="EPT-VW-Qad" collectionClass="NSMutableArray" id="Oww-Jg-lYj"/>
                         <outletCollection property="eyesView" destination="jdj-tg-DQ3" collectionClass="NSMutableArray" id="AuG-k8-rf8"/>
+                        <outletCollection property="sweaterView" destination="azg-0m-dS0" collectionClass="NSMutableArray" id="gpY-Ce-Dgx"/>
+                        <outletCollection property="skinView" destination="4Zm-QK-bmp" collectionClass="NSMutableArray" id="orr-11-nwt"/>
+                        <outletCollection property="skinView" destination="x6U-Dj-Gbo" collectionClass="NSMutableArray" id="s4P-gd-WAg"/>
+                        <outletCollection property="skinView" destination="c3G-Mh-aa6" collectionClass="NSMutableArray" id="tfx-pO-T5L"/>
+                        <outletCollection property="skinView" destination="VEF-vv-R12" collectionClass="NSMutableArray" id="dEO-lK-kw6"/>
+                        <outletCollection property="skinView" destination="7Sp-nP-U0j" collectionClass="NSMutableArray" id="Sne-u9-Cfc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
