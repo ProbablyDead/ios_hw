@@ -53,7 +53,7 @@ final class WrittenWishCell: UITableViewCell {
         
         wrap.addSubview(wishLabel)
         
-        wishLabel.pin.vertically(WrapConstants.yOffset/2)
-        wishLabel.pin.horizontally(WrapConstants.xOffset/2)
+        wishLabel.pin.vertically()
+        wishLabel.pin.horizontally()
     }
 }

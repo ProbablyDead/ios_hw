@@ -27,7 +27,7 @@ final class WishStoringViewController: UIViewController {
     
     // MARK: - Fields
     private let table: UITableView = UITableView(frame: .zero)
-    private let wishArray: [String] = ["tmp wish"]
+    private let exampleWishArray: [String] = ["tmp wish", "another wish", "and one else", "last one, I promise!", "tmp wish", "another wish", "and one else", "last one, I promise!", "tmp wish", "another wish", "and one else", "last one, I promise!", "tmp wish", "another wish", "and one else", "last one, I promise!", "tmp wish", "another wish", "and one else", "last one, I promise!", "tmp wish", "another wish", "and one else", "last one, I promise!", "tmp wish", "another wish", "and one else", "last one, I promise!", ]
     
     // MARK: - Methods
     override func viewDidLoad() {
@@ -66,14 +66,14 @@ final class WishStoringViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension WishStoringViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        wishArray.count
+        exampleWishArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: WrittenWishCell.reuseID, for: indexPath)
         guard let wishCell = cell as? WrittenWishCell else { return cell }
        
-        wishCell.configure(with: wishArray[indexPath.row])
+        wishCell.configure(with: exampleWishArray[indexPath.row])
         
         return wishCell
     }
