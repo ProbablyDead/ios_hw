@@ -7,6 +7,15 @@
 
 import Foundation
 
-class Wish {
-    var text: String!
+struct Wishes {
+    var array: [Wish]!
 }
+
+struct Wish {
+    var text: String!
+    
+    init(_ text: String!) {
+        self.text = text
+    }
+}
+
