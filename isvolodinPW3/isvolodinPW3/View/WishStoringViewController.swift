@@ -126,7 +126,6 @@ extension WishStoringViewController: UITableViewDataSource {
 extension WishStoringViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         deleteWish(index: indexPath.row)
-        print(editingStyle)
         }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
