@@ -8,11 +8,17 @@
 import Foundation
 
 class WishMakerViewModel {
+    private enum Constants {
+        static let wishesKey = "wishes"
+    }
+    
     var bindWishMakerViewModelToController : (() -> ()) = {}
+    private let defaults = UserDefaults.standard
     
     private(set) var wishes: Wishes! {
         didSet {
             bindWishMakerViewModelToController()
+            defaults.set(wishes.array.map{ $0.text }, forKey: Constants.wishesKey)
         }
     }
     
@@ -25,6 +31,7 @@ class WishMakerViewModel {
     }
     
     func updateData() {
-        wishes = Wishes(array: [Wish("tmp wish"), Wish("another wish"), Wish("and one else"), Wish("last one, I promise!")])
+        let data = defaults.array(forKey: Constants.wishesKey) as? [String]
+        wishes = Wishes(array: data?.map { Wish($0) })
     }
 }
