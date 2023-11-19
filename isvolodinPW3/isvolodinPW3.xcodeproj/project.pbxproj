@@ -14,7 +14,7 @@
 		C00318E92B07B6090022DF0D /* WishMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00318E82B07B6090022DF0D /* WishMakerViewModel.swift */; };
 		C00318EB2B07C5200022DF0D /* WishStoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00318EA2B07C5200022DF0D /* WishStoringViewController.swift */; };
 		C00318EE2B07D1BD0022DF0D /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = C00318ED2B07D1BD0022DF0D /* PinLayout */; };
-		C00C4D892B08CEAC0064E69B /* WrittenWishCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C4D882B08CEAC0064E69B /* WrittenWishCellClass.swift */; };
+		C00C4D892B08CEAC0064E69B /* WishCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C4D882B08CEAC0064E69B /* WishCellClass.swift */; };
 		C00C4D8B2B08DDA50064E69B /* WishClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00C4D8A2B08DDA50064E69B /* WishClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		C00318DE2B07916F0022DF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C00318E82B07B6090022DF0D /* WishMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerViewModel.swift; sourceTree = "<group>"; };
 		C00318EA2B07C5200022DF0D /* WishStoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringViewController.swift; sourceTree = "<group>"; };
-		C00C4D882B08CEAC0064E69B /* WrittenWishCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenWishCellClass.swift; sourceTree = "<group>"; };
+		C00C4D882B08CEAC0064E69B /* WishCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCellClass.swift; sourceTree = "<group>"; };
 		C00C4D8A2B08DDA50064E69B /* WishClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,9 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				C00318E42B0791AF0022DF0D /* App */,
-				C00318E52B0791BB0022DF0D /* ViewControllers */,
-				C00318E72B07B5220022DF0D /* ViewModels */,
-				C00318E62B0791D10022DF0D /* Models */,
+				C00318E52B0791BB0022DF0D /* View */,
+				C00318E72B07B5220022DF0D /* ViewModel */,
+				C00318E62B0791D10022DF0D /* Model */,
 				C00318D92B07916F0022DF0D /* Assets.xcassets */,
 				C00318DE2B07916F0022DF0D /* Info.plist */,
 			);
@@ -81,30 +81,30 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		C00318E52B0791BB0022DF0D /* ViewControllers */ = {
+		C00318E52B0791BB0022DF0D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				C00318D42B07916E0022DF0D /* WishMakerViewController.swift */,
 				C00318EA2B07C5200022DF0D /* WishStoringViewController.swift */,
-				C00C4D882B08CEAC0064E69B /* WrittenWishCellClass.swift */,
+				C00C4D882B08CEAC0064E69B /* WishCellClass.swift */,
 			);
-			path = ViewControllers;
+			path = View;
 			sourceTree = "<group>";
 		};
-		C00318E62B0791D10022DF0D /* Models */ = {
+		C00318E62B0791D10022DF0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C00C4D8A2B08DDA50064E69B /* WishClass.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		C00318E72B07B5220022DF0D /* ViewModels */ = {
+		C00318E72B07B5220022DF0D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				C00318E82B07B6090022DF0D /* WishMakerViewModel.swift */,
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +185,7 @@
 				C00318D52B07916E0022DF0D /* WishMakerViewController.swift in Sources */,
 				C00318D12B07916E0022DF0D /* AppDelegate.swift in Sources */,
 				C00318E92B07B6090022DF0D /* WishMakerViewModel.swift in Sources */,
-				C00C4D892B08CEAC0064E69B /* WrittenWishCellClass.swift in Sources */,
+				C00C4D892B08CEAC0064E69B /* WishCellClass.swift in Sources */,
 				C00318D32B07916E0022DF0D /* SceneDelegate.swift in Sources */,
 				C00C4D8B2B08DDA50064E69B /* WishClass.swift in Sources */,
 				C00318EB2B07C5200022DF0D /* WishStoringViewController.swift in Sources */,
