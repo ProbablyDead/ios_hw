@@ -19,7 +19,7 @@ final class WishStoringViewController: UIViewController {
         
         static let numberOfSections: Int = 2
         
-        static let defaultText: String = "New wish"
+        static let defaultText: String = "Add wish"
     }
     
     private enum Markup {
@@ -27,7 +27,6 @@ final class WishStoringViewController: UIViewController {
         static let lineY: CGFloat = 10
         static let lineHeight: CGFloat = 8
         static let tableOffset: CGFloat = 10
-        static let tableBottomOffset: CGFloat = 100
     }
     
     // MARK: - Fields
@@ -72,11 +71,12 @@ final class WishStoringViewController: UIViewController {
         view.addSubview(table)
         table.backgroundColor = .red
         table.dataSource = self
+        table.delegate = self
         table.separatorStyle = .none
         table.translatesAutoresizingMaskIntoConstraints = false
         table.layer.cornerRadius = Constants.tableCornerRadius
         
-        table.pin.left(Markup.tableOffset).right(Markup.tableOffset).top(2*Markup.lineY + Markup.lineHeight).bottom(Markup.tableBottomOffset)
+        table.pin.left(Markup.tableOffset).right(Markup.tableOffset).top(2*Markup.lineY + Markup.lineHeight).bottom(Markup.tableOffset)
         
         table.register(WrittenWishCell.self, forCellReuseIdentifier: WrittenWishCell.reuseID)
         table.register(AddWishCell.self, forCellReuseIdentifier: AddWishCell.reuseID)
@@ -123,3 +123,11 @@ extension WishStoringViewController: UITableViewDataSource {
     
 }
 
+extension WishStoringViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        indexPath.section != 1
+    }
+}

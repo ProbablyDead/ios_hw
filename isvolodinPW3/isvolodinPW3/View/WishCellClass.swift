@@ -89,6 +89,7 @@ final class AddWishCell: UITableViewCell {
         textView.text = wish
         actionWithText = funcForButton
         contentView.isUserInteractionEnabled = false
+        isEditing = false
     }
     
     private func configureUI() {
@@ -97,6 +98,7 @@ final class AddWishCell: UITableViewCell {
         
         configureButtonView()
         configureTextView()
+        
     }
     
     private func configureTextView() {
@@ -104,7 +106,6 @@ final class AddWishCell: UITableViewCell {
         
         textView.backgroundColor = .white
         textView.isUserInteractionEnabled = true
-        textView.isEditable = true
  
         textView.pin.left(Constants.xOffset).top(Constants.yOffset).before(of: buttonView).bottom()
     }
