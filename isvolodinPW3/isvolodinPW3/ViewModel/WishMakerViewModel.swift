@@ -30,6 +30,10 @@ class WishMakerViewModel {
         wishes.array.append(Wish(text))
     }
     
+    func deleteWish(index: Int) {
+        wishes.array.remove(at: index)
+    }
+    
     func updateData() {
         let data = defaults.array(forKey: Constants.wishesKey) as? [String]
         wishes = Wishes(array: data?.map { Wish($0) })

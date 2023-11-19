@@ -19,7 +19,7 @@ final class WishStoringViewController: UIViewController {
         
         static let numberOfSections: Int = 2
         
-        static let defaultText: String = "Add wish"
+        static let defaultText: String = "New wish"
     }
     
     private enum Markup {
@@ -125,9 +125,16 @@ extension WishStoringViewController: UITableViewDataSource {
 
 extension WishStoringViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        deleteWish(index: indexPath.row)
+        print(editingStyle)
         }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         indexPath.section != 1
+    }
+    
+    private func deleteWish(index: Int) {
+        viewModel.deleteWish(index: index)
+        table.reloadData()
     }
 }
